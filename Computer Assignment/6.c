@@ -1,49 +1,44 @@
 #include<stdio.h>
-
+#include<math.h>
+int number_of_digits(int number);
+int return_power_of_ten(int number);
 
 int main(){
 
-    int num;
-    printf("Enter Number:");
-    scanf("%d",num);
-    int num_sqr=num*num;
-    //finding n:
-    int a=num,num_digits=0;
-    while(a>0){
-        num_digits++;
-        a=a/10;
-    }
-    int c=num_sqr,num_sqr_digits=0;
-    while(c>0){
-        num_sqr_digits++;
-        c=c/10;
-    }
-    int b=num_sqr;
-    int num_sqr_arr[num_digits];
-    //adding num_sqr to array:
-    for(int i =num_sqr_digits-1;i>=0;i--){
-        num_sqr_arr[i] = b%10;
-        b=b/10;
-    }
-    int leave = num_sqr_digits-num_digits;
-    int num_left[leave];
-    int num_right[num_digits];
-    int index=0;
-    for(int j=0;j<leave;j++){
-      num_left[index]=num_sqr_arr[j];
-      index++;
-    }
-    index=0;
-    for(int j=leave;j<=num_sqr_digits;j++){
-        num_right[index]=num_sqr_arr[j];
-        index++;
-    }
+    int k;
+    printf("Enter A Number:");
+    scanf("%d",&k);
+    int digits_k = number_of_digits(k); // Number of digits in given number
+    int k_sqr = k*k;
+    int digits_k_sqr = number_of_digits(k_sqr); // Number of digits in square of number
+    int sum_right=0,sum_left=0;
+    int sum_right_pow = return_power_of_ten(digits_k);
+    int leave = digits_k_sqr-digits_k;
+    int sum_left_pow = return_power_of_ten(digits_k);
+    sum_right = k_sqr%sum_right_pow;
+    sum_left = k_sqr/sum_left_pow;
+    int sum = sum_left+sum_right;
+    if(sum==k){
+        printf("Kaprekar Number");
+    } else{
+        printf("Not A Kaprekar Number");
+    } 
 
-    for(int i =0;i<num_sqr_digits;i++){
-        printf("%d \n",num_sqr_arr[i]);
+}
+int return_power_of_ten(int number){
+    int value=1;
+    for(int i =0;i<number;i++){
+        value = value*10;
     }
+    return value;
+}
 
-
-
+int number_of_digits(int number){
+    int count=0;
+    while(number>0){
+        count++;
+        number = number/10;
+    }
+    return count;
 
 }
