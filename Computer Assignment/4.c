@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 int main(){
+    printf("Name: Aditya Jain, RollNo:3112 \n");
     float cost_price,repair_price,selling_price,gain,gain_perc;
     printf("Price of old scooter:");
     scanf("%f",&cost_price);

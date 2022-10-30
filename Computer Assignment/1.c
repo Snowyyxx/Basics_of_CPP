@@ -5,7 +5,7 @@
 #include<stdio.h>
 
 int main(){
-    
+    printf("Name: Aditya Jain, RollNo:3112 \n");
     int num;
     printf("Please enter a number: ");
     scanf("%d",&num);

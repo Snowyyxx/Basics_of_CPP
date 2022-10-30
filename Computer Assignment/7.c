@@ -1,18 +1,20 @@
 #include<stdio.h>
 int sum_of_digits(int number);
 int prime_factors(int number,int array[]);
-int sum_of_array(int array[],int length);
+int sum_of_array(int array[],int length,int prime_sum);
 int print_array(int array[],int length);
 int main(){
-    int num=85;
-    //printf("Enter Number: ");
-    //scanf("%d",&num);
+    printf("Name: Aditya Jain, RollNo:3112 \n");
+
+    int num;
+    printf("Enter Number: ");
+    scanf("%d",&num);
     int num_sum = sum_of_digits(num);
     int prime_array[]={};
     prime_factors(num,prime_array);
     int size_array = sizeof(prime_array);
     int prime_sum;
-    prime_sum = sum_of_array(prime_array,(size_array)/4);
+    prime_sum = sum_of_array(prime_array,size_array/4,prime_sum);
     prime_sum = prime_sum-num;
     if(num_sum==prime_sum){
         printf("%d is a Smith Number",num);
@@ -57,8 +59,7 @@ int prime_factors(int number,int array[]){
         }
     }
 
-int sum_of_array(int array[],int length){
-    int prime_sum=0;
+int sum_of_array(int array[],int length,int prime_sum){
     int d=0;
     for(int i =0;i<length;i++){
         d = sum_of_digits(array[i]);

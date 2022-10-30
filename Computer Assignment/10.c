@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 int main(){
+    printf("Name: Aditya Jain, RollNo:3112 \n");
 
     int roll_no,marks;
     char name[100];
