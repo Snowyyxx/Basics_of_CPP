@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-    printf("Name: Aditya Jain, RollNo:3112 \n");
+    printf("Name: Aditya Jain, Application Number:3112 \n");
     int x_vertex,y_vertex,side_len;
     printf("Enter the x-coordinate of the left bottom vertex: ");
     scanf("%d",&x_vertex);

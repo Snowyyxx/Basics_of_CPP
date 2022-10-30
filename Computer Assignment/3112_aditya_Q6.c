@@ -4,7 +4,7 @@ int number_of_digits(int number);
 int return_power_of_ten(int number);
 
 int main(){
-    printf("Name: Aditya Jain, RollNo:3112 \n");
+    printf("Name: Aditya Jain, Application Number:3112 \n");
 
     int k;
     printf("Enter A Number:");

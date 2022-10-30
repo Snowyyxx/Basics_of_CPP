@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-    printf("Name: Aditya Jain, RollNo:3112 \n");
+    printf("Name: Aditya Jain, Application Number:3112 \n");
 
     int age;
     scanf("%d",&age);

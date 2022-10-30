@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    printf("Name: Aditya Jain, RollNo:3112 \n");
+    printf("Name: Aditya Jain, Application Number:3112 \n");
 
     int user_id,units,total_cost=0;
     char user_name[100];

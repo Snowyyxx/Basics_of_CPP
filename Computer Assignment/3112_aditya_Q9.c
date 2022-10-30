@@ -2,7 +2,7 @@
 #include<conio.h>
 int main()
 {
-    printf("Name: Aditya Jain, RollNo:3112 \n");
+    printf("Name: Aditya Jain, Application Number:3112 \n");
 
     int a,b;
     printf("Enter the first value:");

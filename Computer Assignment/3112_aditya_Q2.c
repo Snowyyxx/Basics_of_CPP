@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-    printf("Name: Aditya Jain, RollNo:3112 \n");
+    printf("Name: Aditya Jain, Application Number:3112 \n");
     int num_std,num_teams;
     printf("Enter number of students:");
     scanf("%d",&num_std);
