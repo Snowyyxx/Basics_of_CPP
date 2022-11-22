@@ -37,8 +37,4 @@ struct node* create(){
         return new_node;
 
     }
-
-
-
-
 }
