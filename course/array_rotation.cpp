@@ -5,9 +5,9 @@ void array_swap_elements(int array[],int index_1,int index_2);
 void print_array(int array[],int length);
 int main(){
     //index: 0 1 2 3 4
-int array[]={1,2,3,4,5,6,7};
+int array[]={1,2,3,4,5,6,7,8,9,10,12,23,42};
         // goal:  
-int d=3;
+int d=4;
 int length=sizeof(array)/4;
 int dummy_array[length];
 copy_array(&dummy_array[0],&array[0],length);
@@ -55,6 +55,6 @@ void array_swap_elements(int array[],int index_1,int index_2){
 }
 void print_array(int array[],int length){
      for(int j=0;j<length;j++){
-        printf("%d",array[j]);
+        printf("%d,",array[j]);
     }
 }
