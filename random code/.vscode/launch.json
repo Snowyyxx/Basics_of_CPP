@@ -59,8 +59,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/adity/OneDrive/Desktop/stuff/code",
-      "program": "c:/Users/adity/OneDrive/Desktop/stuff/code/build/Debug/outDebug",
+      "cwd": "c:/Users/adity/OneDrive/Documents/GitHub/C-C-Practise/random code",
+      "program": "c:/Users/adity/OneDrive/Documents/GitHub/C-C-Practise/random code/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
